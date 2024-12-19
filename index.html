@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flappy Bird Inspired Game</title>
+    <title>Flappy Inventory</title>
     <style>
-        /* Add some basic styles here if needed */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #70c5ce;
+        }
+        canvas {
+            display: block;
+        }
     </style>
+    <!-- Load p5.js from the official CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
 </head>
 <body>
+    <!-- The canvas for the game -->
     <canvas id="Game"></canvas>
 
-    <!-- Link your JavaScript files in the correct order, using 'game/' for the folder -->
-    <script type="module" src="game/constants.js"></script>
-    <script type="module" src="game/bird.js"></script>
-    <script type="module" src="game/floor.js"></script>
-    <script type="module" src="game/pipe.js"></script>
-    <script type="module" src="game/gameButton.js"></script>
-    <script type="module" src="game/gameText.js"></script>
-    <script type="module" src="index.js"></script> <!-- Main game logic file -->
+    <!-- Link your JavaScript files in the correct order, but remove 'type="module"' -->
+    <script src="game/constants.js"></script>
+    <script src="game/bird.js"></script>
+    <script src="game/floor.js"></script>
+    <script src="game/pipe.js"></script>
+    <script src="game/gameButton.js"></script>
+    <script src="game/gameText.js"></script>
+    <script src="index.js"></script> <!-- Main game logic file -->
 </body>
 </html>
