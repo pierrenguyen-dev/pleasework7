@@ -5,19 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flappy Bird Inspired Game</title>
     <style>
-        /* Add some basic styles here if needed */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #70c5ce;
+        }
+        canvas {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <canvas id="Game"></canvas>
 
-    <!-- Link your JavaScript files in the correct order, using 'game/' for the folder -->
-    <script src="game/constants.js"></script>
-    <script src="game/bird.js"></script>
-    <script src="game/floor.js"></script>
-    <script src="game/pipe.js"></script>
-    <script src="game/gameButton.js"></script>
-    <script src="game/gameText.js"></script>
-    <script src="index.js"></script> <!-- Main game logic file -->
+    <!-- Load the local p5.js file -->
+    <script src="p5.js"></script>
+
+    <!-- Your game files -->
+    <script src="./game/constants.js"></script>
+    <script src="./game/bird.js"></script>
+    <script src="./game/floor.js"></script>
+    <script src="./game/pipe.js"></script>
+    <script src="./game/gameButton.js"></script>
+    <script src="./game/gameText.js"></script>
+    <script src="./index.js"></script> <!-- Main game logic -->
 </body>
 </html>
